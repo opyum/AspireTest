@@ -18,7 +18,7 @@ namespace SagaPattern.InventoryService
             {
                 await _bus.Publish(new { Value = $"The time is {DateTimeOffset.Now}" }, stoppingToken);
 
-                await Task.Delay(1000, stoppingToken);
+                await Task.Delay(10000, stoppingToken);
             }
         }
     }
